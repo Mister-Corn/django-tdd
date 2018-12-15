@@ -97,3 +97,9 @@ if __name__ == '__main__':
 ```
 
 Python script checks if it’s been executed from the command line, rather than just imported by another script). We call `unittest.main()`, which launches the unittest test runner, which will automatically find test classes and methods in the file and run them.
+
+## Unit Tests
+
+Unit tests test a particular function of code. Another way of looking at it:
+
+> Unit tests test the application from the inside, from the point of view of the programmer.
