@@ -15,21 +15,61 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
 
-': Reading manifest: Invalid host permission: resource://pdf.js/
-1544893078744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-120910110-1, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-120910110-1, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-120910110-1, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-120910110-1, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-120910110-1, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-120910110-1, line 147: unreachable code after return statement
+[Parent 3128, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 12080, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 12080, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Parent 3128, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5F0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 1700, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Parent 3128, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 15636, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Ch1544895543467	Marionette	INFO	Stopped listening on port 50381
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(202,58-112): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+1544894556346	Marionette	INFO	Listening on port 50771
+1544894556842	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2784, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 12060, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327[Child 13
+120, Chrome_ChildThread] WARN[Child 120ING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 1[Parent 2784, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 9104, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 9101544894563550	Marionette	INFO	Stopped listening on port 50771
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12496
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1544895162985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GENTLE~1\\AppData\\Local\\Temp\\rust_mozprofile.JnFEic5NRuBy"
+1544895163584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1544895163584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
 WARN: compileToBinary(235): 
 C:\fakepath(196,14-129): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
 C:\fakepath(202,58-112): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
 
-1544893081966	Marionette	INFO	Listening on port 50478
-1544893082103	Marionette	WARN	TLS certificate errors will be ignored for this session
-[Child 6700, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
-[Child 6700, [Parent 1628, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
-[Child 14364, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
-[Child 14364, Chrome_ChildThread] WARNING: pip1544893090055	Marionette	INFO	Stopped listening on port 50478
+[Child 12300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 12300, Chrome_1544895166698	Marionette	INFO	Listening on port 50889
+1544895166808	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544895167312	Marionette	INFO	Stopped listening on port 50889
+[Child 16372, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/buil[dChild 9908, Chrome_ChildThread] WARNING: pipe error: 109: file z://build/build/src/ipc/chromiusrc/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327m/src/chrome/common/ipc_channel_win.cc, line 327
 
+[Child 16372, Chrome_ChildThrea[Child 9908, Chrome_ChildThread] WARNING: pipe er[Parent 1484, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 5740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 327
+[Child 57
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-[GPU 2408, 
+[GPU 7344
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
