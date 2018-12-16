@@ -112,3 +112,24 @@ Unit tests test a particular function of code. Another way of looking at it:
   * Django uses some rules to decide which view function should deal with the request (this is referred to as resolving the URL).
   * The view function processes the request and returns an HTTP response.
 
+## Isn't this amount of testing excessive?
+
+It might seem silly to test at such a degree, but considering how quickly things can get complex, having tests on each step of the complexity ladder leads to much higher confidence and easier testing than writing tests when things are already crazy.
+
+## Don't Test Constants
+
+> Unit tests are really about testing logic, flow control, and configuration. Making assertions about exactly what sequence of characters we have in our HTML strings isn’t doing that.
+
+## Rendering HTML Templates
+
+```py
+# lists/views.py
+
+from django.shortcuts import render
+
+def home_page(request):
+    return render(request, 'home.html')
+```
+
+> Instead of building our own HttpResponse, we now use the Django render function. It takes the request as its first parameter (for reasons we’ll go into later) and the name of the template to render. Django will automatically search folders called templates inside any of your apps' directories. Then it builds an HttpResponse for you, based on the content of the template.
+
