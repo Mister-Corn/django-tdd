@@ -41,7 +41,7 @@ class NewVisitorTest(unittest.TestCase):
     # Schmo hits enter, the page updates, and the page lists
     # "1: Get a life" as an item in the to-do list
     inputbox.send_keys(Keys.ENTER)
-    time.sleep(1)
+    time.sleep(2)
     self.check_for_row_in_list_table('1: Get a life')
 
     # The text box persists, ever hungry for more inane tasks for 
@@ -50,7 +50,7 @@ class NewVisitorTest(unittest.TestCase):
     inputbox = self.browser.find_element_by_id('id_new_item')
     inputbox.send_keys('Make dat money')
     inputbox.send_keys(Keys.ENTER)
-    time.sleep(1)
+    time.sleep(2)
 
     # Page updates again, and now shows both items in the list
     self.check_for_row_in_list_table('1: Get a life')
