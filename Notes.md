@@ -169,3 +169,9 @@ The unit-test/code cycle:
 ## Three Strikes and Refactor
 
 Using a thing three times or more? Refactor dat.
+
+# 6
+
+## Make Functional Tests its Own App
+
+We do this so we can take advantage of `Live
