@@ -40,20 +40,30 @@ class NewVisitorTest(unittest.TestCase):
 
     table = self.browser.find_element_by_id('id_list_table')
     rows = table.find_elements_by_tag_name('tr')
-    self.assertTrue(
-      any(row.text == '1: Get a life' for row in rows),
-      'New to-do item does not appear in table'
-    )
+    # self.assertTrue(
+    #   any(row.text == '1: Get a life' for row in rows),
+    #   f"New to-do item does not appear in table. Contents were:\n{table.text}"
+    # )
+    # Alternate:
+    self.assertIn('1: Get a life', [row.text for row in rows])
 
     # The text box persists, ever hungry for more inane tasks for 
     # schmo to keep track of. Schmo enters another tasks:
     # "Made dat money"
-    self.fail('Test ain\'t finished, bruh')
+    inputbox = self.browser.find_element_by_id('id_new_item')
+    inputbox.send_keys('Make dat money')
+    inputbox.send_keys(Keys.ENTER)
+    time.sleep(1)
 
     # Page updates again, and now shows both items in the list
+    table = self.browser.find_element_by_id('id_list_table')
+    rows = table.find_elements_by_tag_name('tr')
+    self.assertIn('1: Get a life', [row.text for row in rows])
+    self.assertIn('2: Make dat money', [row.text for row in rows])
 
     # Schmo notices site has generated a unique url
-
+    self.fail('Test ain\'t finished, bruh')
+    
     # Schmo visits the URL, and sees the to-do list persisting
 
     # OK cool

@@ -18,7 +18,7 @@ class HomePageTest(TestCase):
   #   self.assertEqual(found.func, home_page)
   # The above test is no longer necessary if using Django Test Client
 
-  def test_home_page_returns_correct_html(self):
+  # def test_home_page_returns_correct_html(self):
     # While the below works, we are testing constants, which is pointless
     # request = HttpRequest()
     # response = home_page(request)
@@ -27,8 +27,16 @@ class HomePageTest(TestCase):
     # self.assertTrue(html.startswith('<html>'))
     # self.assertIn('<title>To-Do Lists</title>', html)
     # self.assertTrue(html.endswith('</html>'))
-    response = self.client.get('/')
 
+  def test_uses_home_template(self):
+    response = self.client.get('/')
+    
     # Checks what template was used to generate response
     # It will only work for responses that were retrieved by the test client
+    self.assertTemplateUsed(response, 'home.html')
+  
+  def test_can_save_a_POST_request(self):
+    response = self.client.post('/', 
+      data={'item_text': 'A new list item!'})
+    self.assertIn('A new list item!', response.content.decode())
     self.assertTemplateUsed(response, 'home.html')
