@@ -10,6 +10,11 @@ class NewVisitorTest(unittest.TestCase):
     
   def tearDown(self):
     self.browser.quit()
+  
+  def check_for_row_in_list_table(self, row_text):
+    table = self.browser.find_element_by_id('id_list_table')
+    rows = table.find_elements_by_tag_name('tr')
+    self.assertIn(row_text, [row.text for row in rows])
 
   def test_can_start_a_list_and_retrieve_it_later(self):
     # Some schmo wants a to-do list web app. I don't know why
@@ -37,15 +42,7 @@ class NewVisitorTest(unittest.TestCase):
     # "1: Get a life" as an item in the to-do list
     inputbox.send_keys(Keys.ENTER)
     time.sleep(1)
-
-    table = self.browser.find_element_by_id('id_list_table')
-    rows = table.find_elements_by_tag_name('tr')
-    # self.assertTrue(
-    #   any(row.text == '1: Get a life' for row in rows),
-    #   f"New to-do item does not appear in table. Contents were:\n{table.text}"
-    # )
-    # Alternate:
-    self.assertIn('1: Get a life', [row.text for row in rows])
+    self.check_for_row_in_list_table('1: Get a life')
 
     # The text box persists, ever hungry for more inane tasks for 
     # schmo to keep track of. Schmo enters another tasks:
@@ -56,14 +53,12 @@ class NewVisitorTest(unittest.TestCase):
     time.sleep(1)
 
     # Page updates again, and now shows both items in the list
-    table = self.browser.find_element_by_id('id_list_table')
-    rows = table.find_elements_by_tag_name('tr')
-    self.assertIn('1: Get a life', [row.text for row in rows])
-    self.assertIn('2: Make dat money', [row.text for row in rows])
+    self.check_for_row_in_list_table('1: Get a life')
+    self.check_for_row_in_list_table('2: Make dat money')
 
     # Schmo notices site has generated a unique url
     self.fail('Test ain\'t finished, bruh')
-    
+
     # Schmo visits the URL, and sees the to-do list persisting
 
     # OK cool

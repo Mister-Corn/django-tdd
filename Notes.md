@@ -13,7 +13,7 @@ Structure functional tests around User Story.
 
 ### Aside: Comments
 
-Remember to write comments that explain _why_. Explaining _what_ should be done by the code itself, not by the comments around it. Use _what_ only if you're forced/too lazy to refactor spaghetti-ass code, and keep _why_ comments concise and topical.
+Remember to write comments that explain _why_. Explaining _what_ should be done by the code itself, not by the comments around it. Use _what_ only if you're forced to keep/too lazy to refactor spaghetti-ass code, and keep _why_ comments concise and topical.
 
 > When I first started at Resolver, I used to virtuously pepper my code with nice descriptive comments. My colleagues said to me: “Harry, we have a word for comments. We call them lies.” I was shocked! But I learned in school that comments are good practice?
 
@@ -165,3 +165,7 @@ The unit-test/code cycle:
 > One methodology is eliminate duplication: if your test uses a magic constant (like the "1:" in front of our list item), and your application code also uses it, that counts as duplication, so it justifies refactoring. Removing the magic constant from the application code usually means you have to stop cheating.
 
 > I find that leaves things a little too vague, so I usually like to use a second technique, which is called triangulation: if your tests let you get away with writing "cheating" code that you’re not happy with, like returning a magic constant, write another test that forces you to write some better code. That’s what we’re doing when we extend the FT to check that we get a "2:" when inputting a second list item.
+
+## Three Strikes and Refactor
+
+Using a thing three times or more? Refactor dat.
